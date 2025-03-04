@@ -16,7 +16,21 @@ const getDailyWage = () => {
   }
   return empHours * 20;
 };
+//uc3
+const getWorkHours = () => {
+  let empCheck = Math.floor(Math.random() * 3);
+  switch (empCheck) {
+    case 1:
+      return 4;
+    case 2:
+      return 8;
+    default:
+      return 0;
+  }
+};
 //uc1
 console.log(isPresent);
 // uc2
 console.log(getDailyWage());
+//uc3
+console.log(getWorkHours());
